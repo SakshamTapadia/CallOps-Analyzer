@@ -3,15 +3,6 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Logs
-*.log
-
-# Data files
-!data/.gitkeep  # Keeps the data/ folder in git but ignores contents
-
-# CSV outputs
-*.csv
-
 # Environment files
 .env
 .venv/

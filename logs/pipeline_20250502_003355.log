@@ -1,0 +1,38 @@
+2025-05-02 00:33:55,604 - __main__ - INFO - Starting DPDzero Data Pipeline
+2025-05-02 00:33:55,605 - __main__ - INFO - Step 1: Data Ingestion
+2025-05-02 00:33:55,605 - src.ingestion - INFO - Reading file: data/call_logs.csv
+2025-05-02 00:33:55,610 - src.ingestion - INFO - Successfully read 500 rows from data/call_logs.csv
+2025-05-02 00:33:55,618 - src.ingestion - INFO - Call logs data processed successfully
+2025-05-02 00:33:55,619 - src.ingestion - INFO - Reading file: data/agent_roster.csv
+2025-05-02 00:33:55,620 - src.ingestion - INFO - Successfully read 20 rows from data/agent_roster.csv
+2025-05-02 00:33:55,621 - src.ingestion - INFO - Agent roster data processed successfully
+2025-05-02 00:33:55,621 - src.ingestion - INFO - Reading file: data/disposition_summary.csv
+2025-05-02 00:33:55,622 - src.ingestion - INFO - Successfully read 20 rows from data/disposition_summary.csv
+2025-05-02 00:33:55,625 - src.ingestion - INFO - Disposition summary data processed successfully
+2025-05-02 00:33:55,625 - __main__ - INFO - Step 2: Data Validation
+2025-05-02 00:33:55,625 - src.validation - INFO - All required columns present in call_logs.csv
+2025-05-02 00:33:55,626 - src.validation - WARNING - Found 11 duplicate rows in call_logs.csv
+2025-05-02 00:33:55,628 - src.validation - INFO - Removed 11 duplicates from call_logs.csv
+2025-05-02 00:33:55,629 - src.validation - INFO - No missing values found in call_logs.csv
+2025-05-02 00:33:55,634 - src.validation - WARNING - Found 151 records with invalid status values
+2025-05-02 00:33:55,635 - src.validation - INFO - All required columns present in agent_roster.csv
+2025-05-02 00:33:55,635 - src.validation - INFO - No duplicates found in agent_roster.csv
+2025-05-02 00:33:55,636 - src.validation - INFO - No missing values found in agent_roster.csv
+2025-05-02 00:33:55,637 - src.validation - INFO - All required columns present in disposition_summary.csv
+2025-05-02 00:33:55,638 - src.validation - INFO - No duplicates found in disposition_summary.csv
+2025-05-02 00:33:55,638 - src.validation - WARNING - disposition_summary.csv: Column 'login_time' has 3 missing values (15.00%)
+2025-05-02 00:33:55,640 - __main__ - INFO - Step 3: Data Processing and Feature Engineering
+2025-05-02 00:33:55,640 - src.processing - INFO - Merging call logs with agent roster
+2025-05-02 00:33:55,645 - src.processing - INFO - Total calls: 489
+2025-05-02 00:33:55,645 - src.processing - INFO - Matched with agent roster: 489 (100.00%)
+2025-05-02 00:33:55,646 - src.processing - INFO - Merging with disposition summary
+2025-05-02 00:33:55,649 - src.processing - INFO - Total records after first merge: 489
+2025-05-02 00:33:55,649 - src.processing - INFO - Matched with disposition summary: 489 (100.00%)
+2025-05-02 00:33:55,650 - src.processing - INFO - Calculating performance metrics
+2025-05-02 00:33:55,665 - src.processing - INFO - Calculated metrics for 20 agent-days
+2025-05-02 00:33:55,667 - __main__ - INFO - Step 4: Reporting
+2025-05-02 00:33:55,667 - src.reporting - INFO - Saving performance summary to agent_performance_summary.csv
+2025-05-02 00:33:55,670 - src.reporting - INFO - Successfully saved 20 records to agent_performance_summary.csv
+2025-05-02 00:33:55,671 - src.reporting - INFO - Generating Slack-style summary message
+2025-05-02 00:33:55,672 - src.reporting - INFO - Summary generated for 2025-04-28
+2025-05-02 00:33:55,673 - __main__ - INFO - Data pipeline completed successfully

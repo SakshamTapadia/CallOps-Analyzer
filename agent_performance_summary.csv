@@ -1,0 +1,21 @@
+agent_id,org_id,date,agent_name,office_location,total_calls,unique_loans_contacted,connect_rate,avg_call_duration_min,presence
+A001,O1,2025-04-28,AgentFirst1 AgentLast1,Bangalore,20,20,0.1,0.11,1
+A002,O1,2025-04-28,AgentFirst2 AgentLast2,Delhi,22,22,0.1364,0.14,1
+A003,O1,2025-04-28,AgentFirst3 AgentLast3,Mumbai,21,21,0.381,0.12,1
+A004,O3,2025-04-28,AgentFirst4 AgentLast4,Bangalore,27,27,0.1481,0.13,1
+A005,O3,2025-04-28,AgentFirst5 AgentLast5,Bangalore,28,27,0.1429,0.12,0
+A006,O1,2025-04-28,AgentFirst6 AgentLast6,Chennai,16,16,0.125,0.15,1
+A007,O1,2025-04-28,AgentFirst7 AgentLast7,Bangalore,24,23,0.2083,0.12,1
+A008,O1,2025-04-28,AgentFirst8 AgentLast8,Mumbai,26,26,0.2692,0.1,1
+A009,O3,2025-04-28,AgentFirst9 AgentLast9,Bangalore,26,25,0.2692,0.12,1
+A010,O3,2025-04-28,AgentFirst10 AgentLast10,Mumbai,38,38,0.1842,0.13,1
+A011,O1,2025-04-28,AgentFirst11 AgentLast11,Chennai,22,22,0.2273,0.15,1
+A012,O3,2025-04-28,AgentFirst12 AgentLast12,Chennai,20,20,0.25,0.12,0
+A013,O1,2025-04-28,AgentFirst13 AgentLast13,Delhi,22,22,0.0909,0.11,1
+A014,O3,2025-04-28,AgentFirst14 AgentLast14,Mumbai,29,29,0.3448,0.12,1
+A015,O2,2025-04-28,AgentFirst15 AgentLast15,Chennai,28,27,0.1429,0.14,1
+A016,O1,2025-04-28,AgentFirst16 AgentLast16,Delhi,19,19,0.3158,0.14,1
+A017,O2,2025-04-28,AgentFirst17 AgentLast17,Mumbai,20,19,0.1,0.11,1
+A018,O1,2025-04-28,AgentFirst18 AgentLast18,Bangalore,34,33,0.1765,0.13,0
+A019,O1,2025-04-28,AgentFirst19 AgentLast19,Chennai,26,26,0.2308,0.12,1
+A020,O2,2025-04-28,AgentFirst20 AgentLast20,Delhi,21,21,0.3333,0.11,1
